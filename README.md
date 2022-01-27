@@ -30,4 +30,4 @@ Each entity pair '''(e_1, e_2)''' is serialized as follows:
 ```
 <e_1> \t <e_2> \t <label>
 ```
-where ''<e_i>'' is the serialized version of entity '''i''' and '''<label>''' is the either '''0''' (no-match) or '''1''' (match).
+where ``<e_i>`` is the serialized version of entity ``i`` and ``label`` is the either ``0`` (no-match) or ``1`` (match).
