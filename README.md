@@ -18,6 +18,7 @@ pip install -r requirements.txt
 
 ![Example of geospatial ER](imgs/geo_er_examples.jpg)
 
+<img src="imgs/geo_er_examples.jpg" alt="drawing" width="200"/>
 
 Each entity is pre-serialized as follows:
 
