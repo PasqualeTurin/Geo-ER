@@ -3,7 +3,7 @@
 
 Geo-ER is an Entity Resolution (ER) framework to match geospatial entities. It allows to integrate geospatial databases, performing deduplication of the entries.
 
-## Requirements
+### Requirements
 
 * Python 3.7.7
 * PyTorch 1.9
@@ -14,6 +14,6 @@ Install required packages
 pip install -r requirements.txt
 ```
 
-## Geospatial ER
+### Geospatial ER
 
-![Example of geospatial ER](imgs.jpg)
+![Example of geospatial ER](imgs/geo_er_examples.jpg)
