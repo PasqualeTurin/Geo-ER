@@ -56,7 +56,7 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 
 
 | Source          | City      | Size     | Positive  |
-|=================|===========|==========|============|
+|-----------------|-----------|----------|-----------|
 |OSM-FSQ          | Delete    | a        | a             |
 |                 | Shuffle   | a        | a             |
 |                 | Delete    | a        | a             |
@@ -69,12 +69,3 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 
 
 
-+---------------+---------------+--------------------+
-| Fruit         | Price         | Advantages         |
-+===============+===============+====================+
-| Bananas       | first line\   | first line\        |
-|               | next line     | next line          |
-+---------------+---------------+--------------------+
-| Bananas       | first line\   | first line\        |
-|               | next line     | next line          |
-+---------------+---------------+--------------------+
