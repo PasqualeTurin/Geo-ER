@@ -67,7 +67,7 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 |                 | Toronto   | 27,969   | 5,426 (19.4%) |
 |                 | Pittsburgh| 5,116    | 1,622 (31.7%) |
 
-The last column (``Positive (%)``) shows the number of positive samples.
+The column ``Positive (%)`` shows the number of positive samples.
 
 
 
