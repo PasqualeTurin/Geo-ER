@@ -65,3 +65,16 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 |                 | Move      | a        | a             |
 |                 | Move      | a        | a             |
 |                 | Move      | a        | a             |
+
+
+
+
++---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | first line\   | first line\        |
+|               | next line     | next line          |
++---------------+---------------+--------------------+
+| Bananas       | first line\   | first line\        |
+|               | next line     | next line          |
++---------------+---------------+--------------------+
