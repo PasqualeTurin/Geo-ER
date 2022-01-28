@@ -55,8 +55,11 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 
 | Source          | City      | Size     | Positive  |
 |-----------------|-----------|----------|---------------|
-|del              | Delete    | a        | a             |
-|swap             | Shuffle   | a        | a            |
-|drop_col         | Delete    | a        | a            |
-|append_col       | Move      | a        | a              |
-|all              | Apply     | a        | a             |
+|OSM-FSQ          | Delete    | a        | a             |
+|                 | Shuffle   | a        | a             |
+|                 | Delete    | a        | a             |
+|                 | Move      | a        | a             |
+|OSM-Yelp         | Apply     | a        | a             |
+|                 | Move      | a        | a             |
+|                 | Move      | a        | a             |
+|                 | Move      | a        | a             |
