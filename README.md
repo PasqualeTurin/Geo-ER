@@ -57,15 +57,15 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 
 | Source          | City      | Size     | Positive  |
 |-----------------|-----------|----------|-----------|
-|OSM-FSQ          | Delete    | a        | a             |
-|                 | Shuffle   | a        | a             |
-|                 | Delete    | a        | a             |
-|                 | Move      | a        | a             |
+|OSM-FSQ          | Singapore | 19,243   | 2,116 (11.0%) |
+|                 | Edinburgh | 17,386   | 3,350 (19.3%) |
+|                 | Toronto   | 17,858   | 3,862 (21.6%) |
+|                 | Pittsburgh| 5,001    | 1,454 (29.1%) |
 |||||
-|OSM-Yelp         | Apply     | a        | a             |
-|                 | Move      | a        | a             |
-|                 | Move      | a        | a             |
-|                 | Move      | a        | a             |
+|OSM-Yelp         | Singapore | 21,588   | 2,941 (13.6%) |
+|                 | Edinburgh | 18,733   | 2,310 (12.3%) |
+|                 | Toronto   | 27,969   | 5,426 (19.4%) |
+|                 | Pittsburgh| 5,116    | 1,622 (31.7%) |
 
 
 
