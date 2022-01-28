@@ -1,5 +1,4 @@
 # Geo-ER
-
 ### Code for 'Geospatial Entity Resolution' paper (WWW 2022)
 
 Geo-ER is an Entity Resolution (ER) framework to match geospatial entities. It allows to integrate geospatial databases, performing deduplication of the entries. Geo-ER leverages Transformer-based Language Models (LMs), Distance embedding, and a novel Neighbourhood attention component, based on Graph Attention (GAT).
