@@ -51,10 +51,10 @@ The meaning of the flags and their possible values are listed here:
 
 This paper introduces 8 real-world datasets, joining 3 different sources (OpenStreetMap, Foursquare and Yelp), in 4 different cities (Singapore, Edinburgh, Toronto and Pittsburgh). The statistics of the datasets are the following:
 
-| Operators       | Details                                           |
+| Source          | City      | Size     | #Positive(%)  |
 |-----------------|---------------------------------------------------|
-|del              | Delete a span of tokens                      |
-|swap             | Shuffle a span of tokens                          |
-|drop_col         | Delete a whole attribute                          |
-|append_col       | Move an attribute (append to the end of another attr) |
-|all              | Apply all the operators uniformly at random    |
+|del              | Delete    | a        | a             |
+|swap             | Shuffle   | a        | a            |
+|drop_col         | Delete    | a        | a            |
+|append_col       | Move      | a        | a              |
+|all              | Apply     | a        | a             |
