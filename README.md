@@ -46,3 +46,15 @@ python main.py -c pit -s osm_fsq
 The meaning of the flags and their possible values are listed here:
 * ``-c``, ``--city``: Specify the dataset of which city you wish to use for training. Possible values are ``Sin``, ``Edi``, ``Tor``, ``Pit``.
 * ``-s``, ``--source``: Specify the sources to be joined to create the dataset. Possible values are ``osm_fsq``, ``osm_yelp``.
+
+### Datasets
+
+This paper introduces 8 real-world datasets, joining 3 different sources (OpenStreetMap, Foursquare and Yelp), in 4 different cities (Singapore, Edinburgh, Toronto and Pittsburgh). The statistics of the datasets are the following:
+
+| Operators       | Details                                           |
+|-----------------|---------------------------------------------------|
+|del              | Delete a span of tokens                      |
+|swap             | Shuffle a span of tokens                          |
+|drop_col         | Delete a whole attribute                          |
+|append_col       | Move an attribute (append to the end of another attr) |
+|all              | Apply all the operators uniformly at random    |
