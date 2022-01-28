@@ -16,6 +16,8 @@ pip install -r requirements.txt
 
 ### Geospatial ER
 
+The following image (left) depicts an example of Geospatial ER, in which two sources are being joined. Geo-ER uses textual information, distance and spatial neighbours information (right) to infer if two records, from the two sources, refer to the same real-world entity.
+
 <img src="imgs/geo_er_examples.jpg" alt="Example of geospatial ER" width="62%"/><img src="imgs/neighbourhood.jpg" alt="Example of geospatial ER" width="38%"/>
 
 Each entity is pre-serialized as follows:
