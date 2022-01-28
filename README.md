@@ -35,5 +35,14 @@ Each entity pair ``<e_1, e_2>`` is serialized as follows:
 ```
 where ``<e_i>`` is the serialized version of entity ``i`` and ``<label>`` is the either ``0`` (no-match) or ``1`` (match).
 
+### Training
 
+To train Geo-ER, please use:
 
+```
+python main.py -c pit -s osm_fsq
+```
+
+The meaning of the flags and their possible values are listed here:
+``-c``, ``--city``: Specify the dataset of which city you wish to use for training. Possible values are ``Sin``, ``Edi``, ``Tor``, ``Pit``.
+``-s``, ``--source``: Specify the sources to be joined to create the dataset. Possible values are ``osm_fsq``, ``osm_yelp``.
