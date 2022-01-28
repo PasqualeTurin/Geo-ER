@@ -43,6 +43,6 @@ To train Geo-ER, please use:
 python main.py -c pit -s osm_fsq
 ```
 
-The meaning of the flags and their possible values are listed here:\n
-``-c``, ``--city``: Specify the dataset of which city you wish to use for training. Possible values are ``Sin``, ``Edi``, ``Tor``, ``Pit``.
-``-s``, ``--source``: Specify the sources to be joined to create the dataset. Possible values are ``osm_fsq``, ``osm_yelp``.
+The meaning of the flags and their possible values are listed here:
+* ``-c``, ``--city``: Specify the dataset of which city you wish to use for training. Possible values are ``Sin``, ``Edi``, ``Tor``, ``Pit``.
+* ``-s``, ``--source``: Specify the sources to be joined to create the dataset. Possible values are ``osm_fsq``, ``osm_yelp``.
