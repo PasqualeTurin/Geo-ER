@@ -3,7 +3,7 @@
 
 Geo-ER is an Entity Resolution (ER) framework to match geospatial entities. It allows to integrate geospatial databases, performing deduplication of the entries. Geo-ER leverages Transformer-based Language Models (LMs), Distance embedding, and a novel Neighbourhood attention component, based on Graph Attention (GAT).
 
-
+----------------------------------------------------------
 ### Requirements
 
 * Python 3.7.7
@@ -15,7 +15,7 @@ Install required packages
 pip install -r requirements.txt
 ```
 
-
+----------------------------------------------------------
 ### Geospatial ER
 
 The following image (left) depicts an example of Geospatial ER, in which two sources are being joined. Geo-ER uses textual information, distance and spatial neighbours information (right) to infer if two records, from the two sources, refer to the same real-world entity.
@@ -35,6 +35,7 @@ Each entity pair ``<e_1, e_2>`` is serialized as follows:
 ```
 where ``<e_i>`` is the serialized version of entity ``i`` and ``<label>`` is the either ``0`` (no-match) or ``1`` (match).
 
+----------------------------------------------------------
 ### Training
 
 To train Geo-ER, please use:
@@ -47,6 +48,7 @@ The meaning of the flags and their possible values are listed here:
 * ``-c``, ``--city``: Specify the dataset of which city you wish to use for training. Possible values are ``Sin``, ``Edi``, ``Tor``, ``Pit``.
 * ``-s``, ``--source``: Specify the sources to be joined to create the dataset. Possible values are ``osm_fsq``, ``osm_yelp``.
 
+----------------------------------------------------------
 ### Datasets
 
 This paper introduces 8 real-world datasets, joining 3 different sources (OpenStreetMap, Foursquare and Yelp), in 4 different cities (Singapore, Edinburgh, Toronto and Pittsburgh). The statistics of the datasets are the following:
@@ -59,7 +61,6 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 |                 | Shuffle   | a        | a             |
 |                 | Delete    | a        | a             |
 |                 | Move      | a        | a             |
-----------------------------------------------------------
 |OSM-Yelp         | Apply     | a        | a             |
 |                 | Move      | a        | a             |
 |                 | Move      | a        | a             |
