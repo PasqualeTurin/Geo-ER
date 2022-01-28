@@ -51,7 +51,7 @@ The meaning of the flags and their possible values are listed here:
 
 ### Datasets
 
-This paper introduces 8 real-world datasets, joining 3 different sources (OpenStreetMap, Foursquare and Yelp), in 4 different cities (Singapore, Edinburgh, Toronto and Pittsburgh). The statistics of the datasets are the following:
+This paper introduces 8 real-world datasets, joining 3 different sources (``OpenStreetMap``, ``Foursquare`` and ``Yelp``), in 4 different cities (``Singapore``, ``Edinburgh``, ``Toronto`` and ``Pittsburgh``). The statistics of the datasets are the following:
 
 
 
