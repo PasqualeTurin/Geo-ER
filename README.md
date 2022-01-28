@@ -61,6 +61,8 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 |                 | Shuffle   | a        | a             |
 |                 | Delete    | a        | a             |
 |                 | Move      | a        | a             |
+
+
 |OSM-Yelp         | Apply     | a        | a             |
 |                 | Move      | a        | a             |
 |                 | Move      | a        | a             |
