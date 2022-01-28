@@ -70,7 +70,7 @@ This paper introduces 8 real-world datasets, joining 3 different sources (OpenSt
 The column ``Positive (%)`` shows the number of positive samples.
 The 8 datasets can be found in ``data\train_valid_test\``.
 
-##### If you wish to use any of our datasets for your research, please cite our paper.
+#### If you wish to use any of our datasets for your research, please cite our paper.
 
 ### Citation Information
 
