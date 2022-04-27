@@ -73,21 +73,18 @@ The 8 datasets can be found in ``data/train_valid_test/``
 #### If you wish to use any of our datasets for your research, please cite our paper
 
 ### Citation Information
-
+```
 @inproceedings{10.1145/3485447.3512026,
-author = {Balsebre, Pasquale and Yao, Dezhong and Cong, Gao and Hai, Zhen},
-title = {Geospatial Entity Resolution},
-year = {2022},
-isbn = {9781450390965},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3485447.3512026},
-doi = {10.1145/3485447.3512026},
-booktitle = {Proceedings of the ACM Web Conference 2022},
-pages = {3061–3070},
-numpages = {10},
-keywords = {graph attention, neighbourhood embedding, geospatial data, neural networks, Entity resolution},
-location = {Virtual Event, Lyon, France},
-series = {WWW '22}
+  author = {Balsebre, Pasquale and Yao, Dezhong and Cong, Gao and Hai, Zhen},
+  title = {Geospatial Entity Resolution},
+  year = {2022},
+  isbn = {9781450390965},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3485447.3512026},
+  doi = {10.1145/3485447.3512026},
+  booktitle = {Proceedings of the ACM Web Conference 2022},
+  location = {Virtual Event, Lyon, France},
+  series = {WWW '22}
 }
-
+```
