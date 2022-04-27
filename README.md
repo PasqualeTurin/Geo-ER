@@ -81,7 +81,6 @@ The 8 datasets can be found in ``data/train_valid_test/``
   isbn = {9781450390965},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3485447.3512026},
   doi = {10.1145/3485447.3512026},
   booktitle = {Proceedings of the ACM Web Conference 2022},
   location = {Virtual Event, Lyon, France},
