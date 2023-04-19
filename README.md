@@ -4,7 +4,28 @@
 Geo-ER is an Entity Resolution (ER) framework to match geospatial entities. It allows to integrate geospatial databases, performing deduplication of the entries. Geo-ER leverages Transformer-based Language Models (LMs), Distance embedding and a novel Neighbourhood Attention component, based on Graph Attention (GAT).
 
 ### <ins>UPDATE</ins>
-Now Geo-ER supports json formatted neighbors for entities, to make it easier to use it for other tasks and dataset.
+Now Geo-ER supports json formatted neighbors for entities, to make it easier to use it for other tasks and dataset. The jsonn format is the following:
+
+```
+# list of python dictionaries
+[
+    {
+        "name1": "some name",         # name of entity1
+        "name2": "some other name",   # name of entity2
+        "neigh1": [
+                                      # list of entity1 neighbors' names
+        ],
+        "neigh2": [
+                                      # list of entity2 neighbors' names
+        ],
+        "dist1": [
+                                      # list of entity1 neighbors' distances from entity1
+        ],
+        "dist2": [
+                                      # list of entity2 neighbors' distances from entity2
+        ]
+    }
+```
 
 ### Requirements
 
