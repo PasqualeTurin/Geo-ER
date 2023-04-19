@@ -15,6 +15,7 @@ from torch.autograd import Variable
 import random
 import time
 import math
+from math import sin, cos, sqrt, atan2, radians
 import json
 import pickle
 import pandas as pd
@@ -23,30 +24,79 @@ import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 from ast import literal_eval
 from difflib import SequenceMatcher
-from functions import compute_dist, similar, jaccard_similarity
 
-city = 'sin'
+
+def similar(a, b):
+    return SequenceMatcher(None, a, b).ratio()
+    
+    
+def jaccard_similarity(list1, list2):
+    intersection = len(list(set(list1).intersection(list2)))
+    union = (len(list1) + len(list2)) - intersection
+    return float(intersection) / union
+
+
+def compute_dist(lat1, lon1, lat2, lon2):
+
+    R = 6373.0
+    
+    try:
+        float(lat1)
+    except ValueError:
+        return ' '
+        
+    try:
+        float(lon1)
+    except ValueError:
+        return ' '
+        
+    try:
+        float(lat2)
+    except ValueError:
+        return ' '
+        
+    try:
+        float(lon2)
+    except ValueError:
+        return ' '
+        
+        
+    
+    lat1 = radians(float(lat1))
+    lon1 = radians(float(lon1))
+        
+    lat2 = radians(float(lat2))
+    lon2 = radians(float(lon2))
+                
+    dlon = lon2 - lon1
+    dlat = lat2 - lat1
+
+    a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+    return str(round(R * c * 1000))
+
+
+city = 'pit'
+split = '/osm_fsq/'
 
 NEIGHBORHOOD_RADIUS = 1000
 HIDDEN_SIZE = 768
 
-language_model = BertModel.from_pretrained('bert-base-uncased')
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-
-csv_path_osm = 'data_csv/'+city+'/osm_'+city+'.csv'
+csv_path_osm = city+'/osm_'+city+'.csv'
 osm_dataset = pd.read_csv(csv_path_osm, index_col=0).fillna(' ')
-csv_path_yelp = 'data_csv/'+city+'/yelp_'+city+'.csv'
+csv_path_yelp = city+'/yelp_'+city+'.csv'
 yelp_dataset = pd.read_csv(csv_path_yelp, index_col=0).fillna(' ')
 
 dataset = osm_dataset.append(yelp_dataset, ignore_index=True)
 
-train_path = 'train_valid_test/'+city+'/train.txt'
-valid_path = 'train_valid_test/'+city+'/valid.txt'
-test_path = 'train_valid_test/'+city+'/test.txt'
+train_path = 'train_valid_test'+split+city+'/train.txt'
+valid_path = 'train_valid_test'+split+city+'/valid.txt'
+test_path = 'train_valid_test'+split+city+'/test.txt'
 
-train_path_out = 'neighborhood_train_valid_test/'+city+'/n_train.txt'
-valid_path_out = 'neighborhood_train_valid_test/'+city+'/n_valid.txt'
-test_path_out = 'neighborhood_train_valid_test/'+city+'/n_test.txt'
+train_path_out = 'neighborhood_train_valid_test/'+city+'/n_train.json'
+valid_path_out = 'neighborhood_train_valid_test/'+city+'/n_valid.json'
+test_path_out = 'neighborhood_train_valid_test/'+city+'/n_test.json'
 
 for path in [train_path, valid_path, test_path]:
 
@@ -61,14 +111,22 @@ for path in [train_path, valid_path, test_path]:
     else:
         out_path = test_path_out
         print('Preparing test neighborhood data...')
+        
+    
+    count = 0
+    with open(path, 'r') as f:
+        for line in f:
+            count+=1
 
-
+    c = 0
     with open(path, 'r') as f:
     
         for line in f:
         
             e1 = line.split('\t')[0].lower()
             e2 = line.split('\t')[1].lower()
+            
+            entry = {}
             
             name1 = []
             name2 = []
@@ -112,19 +170,26 @@ for path in [train_path, valid_path, test_path]:
             distances2 = []
             
             
-            x = tokenizer.tokenize('[CLS] ' + name1 + ' [SEP]')
-            x = tokenizer.convert_tokens_to_ids(x)
-            x = torch.tensor(x).view(1,-1)
-            x = language_model(x)[0][:,0,:].view(-1).detach().numpy()
-            neighborhood1.append(x)
+            # x = tokenizer.tokenize('[CLS] ' + name1 + ' [SEP]')
+            # x = tokenizer.convert_tokens_to_ids(x)
+            # x = torch.tensor(x).view(1,-1)
+            # x = language_model(x)[0][:,0,:].view(-1).detach().numpy()
+            # neighborhood1.append(x)
+            entry['name1'] = name1
             
             
             
-            x = tokenizer.tokenize('[CLS] ' + name2 + ' [SEP]')
-            x = tokenizer.convert_tokens_to_ids(x)
-            x = torch.tensor(x).view(1,-1)
-            x = language_model(x)[0][:,0,:].view(-1).detach().numpy()
-            neighborhood2.append(x)
+            # x = tokenizer.tokenize('[CLS] ' + name2 + ' [SEP]')
+            # x = tokenizer.convert_tokens_to_ids(x)
+            # x = torch.tensor(x).view(1,-1)
+            # x = language_model(x)[0][:,0,:].view(-1).detach().numpy()
+            # neighborhood2.append(x)
+            entry['name2'] = name2
+            
+            entry['neigh1'] = []
+            entry['neigh2'] = []
+            entry['dist1'] = []
+            entry['dist2'] = []
             
             
             for i in range(dataset.shape[0]):
@@ -137,18 +202,20 @@ for path in [train_path, valid_path, test_path]:
                 except ValueError:
                     continue
                 
-                if (jaccard_similarity(name1.split(), row['name'].lower().split()) > 0.4 or similar(name1, row['name'].lower()) > 0.6) and dist < NEIGHBORHOOD_RADIUS:
+                if (jaccard_similarity(name1.split(), row['name'].lower().split()) > 0.4 or similar(name1, row['name'].lower()) > 0.75) and dist < NEIGHBORHOOD_RADIUS:
                     
                     if (name1 == row['name'].lower() and str(row['latitude']) == lat1 and str(row['longitude']) == long1) or (name2 == row['name'].lower() and str(row['latitude']) == lat2 and str(row['longitude']) == long2):
                         continue
                 
                 
-                    x = tokenizer.tokenize('[CLS] ' + row['name'].lower() + ' [SEP]')
-                    x = tokenizer.convert_tokens_to_ids(x)
-                    x = torch.tensor(x).view(1,-1)
-                    x = language_model(x)[0][:,0,:].view(-1).detach().numpy()
-                    neighborhood1.append(x)
-                    distances1.append(dist)
+                    # x = tokenizer.tokenize('[CLS] ' + row['name'].lower() + ' [SEP]')
+                    # x = tokenizer.convert_tokens_to_ids(x)
+                    # x = torch.tensor(x).view(1,-1)
+                    # x = language_model(x)[0][:,0,:].view(-1).detach().numpy()
+                    # neighborhood1.append(x)
+                    # distances1.append(dist)
+                    entry['neigh1'].append(row['name'].lower())
+                    entry['dist1'].append(dist)
                   
                   
                 dist = compute_dist(lat2, long2, str(row['latitude']), str(row['longitude']))
@@ -158,27 +225,29 @@ for path in [train_path, valid_path, test_path]:
                 except ValueError:
                     continue
                 
-                if (jaccard_similarity(name2.split(), row['name'].lower().split()) > 0.4 or similar(name2, row['name'].lower()) > 0.6) and dist < NEIGHBORHOOD_RADIUS:
+                if (jaccard_similarity(name2.split(), row['name'].lower().split()) > 0.4 or similar(name2, row['name'].lower()) > 0.75) and dist < NEIGHBORHOOD_RADIUS:
                     
                     if (name1 == row['name'].lower() and str(row['latitude']) == lat1 and str(row['longitude']) == long1) or (name2 == row['name'].lower() and str(row['latitude']) == lat2 and str(row['longitude']) == long2):
                         continue
                 
-                    x = tokenizer.tokenize('[CLS] ' + row['name'].lower() + ' [SEP]')
-                    x = tokenizer.convert_tokens_to_ids(x)
-                    x = torch.tensor(x).view(1,-1)
-                    x = language_model(x)[0][:,0,:].view(-1).detach().numpy()
-                    neighborhood2.append(x)
-                    distances2.append(dist)
+                    # x = tokenizer.tokenize('[CLS] ' + row['name'].lower() + ' [SEP]')
+                    # x = tokenizer.convert_tokens_to_ids(x)
+                    # x = torch.tensor(x).view(1,-1)
+                    # x = language_model(x)[0][:,0,:].view(-1).detach().numpy()
+                    # neighborhood2.append(x)
+                    # distances2.append(dist)
+                    entry['neigh2'].append(row['name'].lower())
+                    entry['dist2'].append(dist)
                     
                     
             
-            if len(neighborhood1) < 2:
-                neighborhood1.append(np.zeros(HIDDEN_SIZE))
-                distances1.append(NEIGHBORHOOD_RADIUS)
+            # if len(neighborhood1) < 2:
+                # neighborhood1.append(np.zeros(HIDDEN_SIZE))
+                # distances1.append(NEIGHBORHOOD_RADIUS)
             
-            if len(neighborhood2) < 2:
-                neighborhood2.append(np.zeros(HIDDEN_SIZE))
-                distances2.append(NEIGHBORHOOD_RADIUS)
+            # if len(neighborhood2) < 2:
+                # neighborhood2.append(np.zeros(HIDDEN_SIZE))
+                # distances2.append(NEIGHBORHOOD_RADIUS)
             
             
             
@@ -188,10 +257,13 @@ for path in [train_path, valid_path, test_path]:
             #time.sleep(10)
             
             
-            entry = [neighborhood1, distances1, neighborhood2, distances2]
+            # entry = [neighborhood1, distances1, neighborhood2, distances2]
+            
             entries.append(entry)
+            c+=1
+            if c%100 == 0:
+                print(str(c/count*100) + '%')
             
             
-    
-    with open(out_path, 'wb') as f:
-        pickle.dump(entries, f)
+    with open(out_path, 'w', encoding='utf-8') as f:
+        json.dump(entries, f, indent=4)

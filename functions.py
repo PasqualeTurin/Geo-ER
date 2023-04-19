@@ -134,22 +134,11 @@ def prepare_dataset(path, n_path, max_seq_len=128):
         
 
 
-  with open(n_path, 'rb') as f:
-    neighbors = pickle.load(f)
+  with open(n_path, encoding='utf-8') as f:
+    neigh = json.load(f)
+    
 
-  for n in neighbors:
-    n1 = n[0]
-    d1 = [10/max(d,10) for d in n[1]]
-    n2 = n[2]
-    d2 = [10/max(d,10) for d in n[3]]
-    p1 = n1[0]
-    p2 = n2[0]
-    del n1[0]
-    del n2[0]
-
-    neigh_x.append([[torch.tensor(p1), torch.tensor(n1, dtype=torch.float), torch.tensor(d1, dtype=torch.float)], [torch.tensor(p2), torch.tensor(n2, dtype=torch.float), torch.tensor(d2, dtype=torch.float)]])
-
-  return data_x, coord_x, neigh_x, data_y
+  return data_x, coord_x, neigh, data_y
 
 
     

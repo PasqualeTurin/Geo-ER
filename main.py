@@ -23,17 +23,17 @@ else:
 device = config.device
 
 train_path = config.path + args.source + '/' + args.city + '/train.txt'
-n_train_path = config.n_path + args.source + '/' + args.city + '/n_train.txt'
+n_train_path = config.n_path + args.source + '/' + args.city + '/n_train.json'
 train_x, train_coord, train_n, train_y = prepare_dataset(train_path, n_train_path, max_seq_len=config.max_seq_len)
 
 
 valid_path = config.path + args.source + '/' + args.city + '/valid.txt'
-n_valid_path = config.n_path + args.source + '/' + args.city + '/n_valid.txt'
+n_valid_path = config.n_path + args.source + '/' + args.city + '/n_valid.json'
 valid_x, valid_coord, valid_n, valid_y = prepare_dataset(valid_path, n_valid_path, max_seq_len=config.max_seq_len)
 
 
 test_path = config.path + args.source + '/' + args.city + '/test.txt'
-n_test_path = config.n_path + args.source + '/' + args.city + '/n_test.txt'
+n_test_path = config.n_path + args.source + '/' + args.city + '/n_test.json'
 test_x, test_coord, test_n, test_y = prepare_dataset(test_path, n_test_path, max_seq_len=config.max_seq_len)
 
 print('Succesfully loaded',city,'(',args.source,') dataset')
