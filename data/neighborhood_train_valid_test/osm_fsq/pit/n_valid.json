@@ -1,0 +1,1656 @@
+[
+    {
+        "name1": "1909 mckee's rocks strike",
+        "name2": "mckees rocks bridge",
+        "neigh1": [],
+        "neigh2": [
+            "mckees rocks mound"
+        ],
+        "dist1": [],
+        "dist2": [
+            518
+        ]
+    },
+    {
+        "name1": "north ave at lincoln ave",
+        "name2": "evergreen ave at north ave",
+        "neigh1": [
+            "north ave at fremont st",
+            "grant ave at north ave",
+            "north ave at grant ave",
+            "north ave at klopfer st",
+            "north ave at elizabeth st"
+        ],
+        "neigh2": [
+            "north ave at fremont st",
+            "evergreen ave at david st",
+            "evergreen ave at john st",
+            "evergreen ave at franklin st",
+            "evergreen ave at emma st",
+            "evergreen ave at frederick st",
+            "north ave at klopfer st",
+            "north ave at elizabeth st"
+        ],
+        "dist1": [
+            138,
+            96,
+            78,
+            439,
+            231
+        ],
+        "dist2": [
+            976,
+            216,
+            417,
+            92,
+            190,
+            319,
+            675,
+            887
+        ]
+    },
+    {
+        "name1": "crossfit mt. lebanon",
+        "name2": "bikram yoga mt lebanon",
+        "neigh1": [
+            "mt. lebanon",
+            "mt. lebanon",
+            "mt. lebanon floral",
+            "mt. lebanon",
+            "mt. lebanon",
+            "crossfit mt. lebanon"
+        ],
+        "neigh2": [],
+        "dist1": [
+            455,
+            455,
+            809,
+            454,
+            455,
+            62
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "carnegie park",
+        "name2": "carnegie station",
+        "neigh1": [],
+        "neigh2": [
+            "carnegie"
+        ],
+        "dist1": [],
+        "dist2": [
+            81
+        ]
+    },
+    {
+        "name1": "bellefield presbyterian church",
+        "name2": "bellefield presbyterian church",
+        "neigh1": [
+            "bellefield presbyterian church bell tower"
+        ],
+        "neigh2": [
+            "bellefield presbyterian church bell tower"
+        ],
+        "dist1": [
+            558
+        ],
+        "dist2": [
+            563
+        ]
+    },
+    {
+        "name1": "upmc mercy",
+        "name2": "upmc mercy inpatient rehab",
+        "neigh1": [
+            "upmc mercy"
+        ],
+        "neigh2": [
+            "upmc mercy"
+        ],
+        "dist1": [
+            67
+        ],
+        "dist2": [
+            122
+        ]
+    },
+    {
+        "name1": "east building",
+        "name2": "taste buds",
+        "neigh1": [
+            "lawyers building",
+            "west building",
+            "grant building"
+        ],
+        "neigh2": [
+            "taste buds"
+        ],
+        "dist1": [
+            997,
+            86,
+            869
+        ],
+        "dist2": [
+            2
+        ]
+    },
+    {
+        "name1": "laundromat",
+        "name2": "bloomers laundromat",
+        "neigh1": [],
+        "neigh2": [
+            "liberty laundromat"
+        ],
+        "dist1": [],
+        "dist2": [
+            156
+        ]
+    },
+    {
+        "name1": "cupka's cafe",
+        "name2": "jazzman's cafe",
+        "neigh1": [
+            "cupka's cafe ii"
+        ],
+        "neigh2": [],
+        "dist1": [
+            38
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "shadyside plaza",
+        "name2": "upmc shadyside helipad",
+        "neigh1": [],
+        "neigh2": [
+            "upmc shadyside",
+            "upmc shadyside"
+        ],
+        "dist1": [],
+        "dist2": [
+            320,
+            129
+        ]
+    },
+    {
+        "name1": "roselawn houses",
+        "name2": "scobell house",
+        "neigh1": [],
+        "neigh2": [
+            "scobell house"
+        ],
+        "dist1": [],
+        "dist2": [
+            8
+        ]
+    },
+    {
+        "name1": "dunkin' donuts",
+        "name2": "dunkin' donuts",
+        "neigh1": [
+            "dunkin' donuts"
+        ],
+        "neigh2": [
+            "dunkin' donuts"
+        ],
+        "dist1": [
+            47
+        ],
+        "dist2": [
+            17
+        ]
+    },
+    {
+        "name1": "cogo's",
+        "name2": "cogo's",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "pashek associates",
+        "name2": "northside associates",
+        "neigh1": [],
+        "neigh2": [
+            "northside associates"
+        ],
+        "dist1": [],
+        "dist2": [
+            257
+        ]
+    },
+    {
+        "name1": "foster zero",
+        "name2": "fosters",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "pittsburgh renaissance",
+        "name2": "pcn pittsburgh bureau",
+        "neigh1": [
+            "renaissance pittsburgh hotel",
+            "renaissance pittsburgh hotel"
+        ],
+        "neigh2": [],
+        "dist1": [
+            30,
+            32
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "squirrel hill news stand",
+        "name2": "squirrel hill locksmith",
+        "neigh1": [
+            "squirrel hill"
+        ],
+        "neigh2": [
+            "squirrel hill jewelry",
+            "squirrel hill cafe",
+            "squirrel hill cafe",
+            "squirrel hill locksmith",
+            "squirrel hill"
+        ],
+        "dist1": [
+            115
+        ],
+        "dist2": [
+            47,
+            379,
+            372,
+            262,
+            416
+        ]
+    },
+    {
+        "name1": "east liberty lutheran church",
+        "name2": "east liberty presbyterian church",
+        "neigh1": [
+            "east liberty presbyterian church"
+        ],
+        "neigh2": [
+            "eastminster presbyterian church",
+            "fourth presbyterian church",
+            "east liberty presbyterian church"
+        ],
+        "dist1": [
+            355
+        ],
+        "dist2": [
+            318,
+            793,
+            53
+        ]
+    },
+    {
+        "name1": "pittsburgh news",
+        "name2": "pittsburgh hail storm",
+        "neigh1": [
+            "pittsburgh pirates",
+            "pittsburgh movers",
+            "pittsburgh poke",
+            "pittsburgh clo",
+            "pittsburgh skyline",
+            "pittsburgh beerfest",
+            "pittsburgh rare"
+        ],
+        "neigh2": [
+            "pittsburgh hilton"
+        ],
+        "dist1": [
+            595,
+            459,
+            228,
+            278,
+            888,
+            684,
+            990
+        ],
+        "dist2": [
+            769
+        ]
+    },
+    {
+        "name1": "missionary temple church of god in christ",
+        "name2": "morningside church of god in christ",
+        "neigh1": [
+            "pentecostal temple church of god in christ"
+        ],
+        "neigh2": [
+            "morningside church of god in christ"
+        ],
+        "dist1": [
+            281
+        ],
+        "dist2": [
+            64
+        ]
+    },
+    {
+        "name1": "courtyard by marriott pittsburgh shadyside",
+        "name2": "courtyard by marriott pittsburgh shadyside pool",
+        "neigh1": [
+            "courtyard pittsburgh shadyside"
+        ],
+        "neigh2": [
+            "courtyard pittsburgh shadyside"
+        ],
+        "dist1": [
+            7
+        ],
+        "dist2": [
+            18
+        ]
+    },
+    {
+        "name1": "x shadyside",
+        "name2": "shadyside hideaway",
+        "neigh1": [
+            "upmc shadyside",
+            "upmc shadyside",
+            "x shadyside"
+        ],
+        "neigh2": [
+            "shadyside hideaway bar",
+            "shadyside detail"
+        ],
+        "dist1": [
+            978,
+            787,
+            4
+        ],
+        "dist2": [
+            15,
+            511
+        ]
+    },
+    {
+        "name1": "shadyside place",
+        "name2": "shadyside market",
+        "neigh1": [
+            "shadyside smiles"
+        ],
+        "neigh2": [
+            "shadyside market and deli",
+            "shadyside market & deli"
+        ],
+        "dist1": [
+            661
+        ],
+        "dist2": [
+            24,
+            23
+        ]
+    },
+    {
+        "name1": "west park american hardware",
+        "name2": "west park american hardware",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "oak hill apartments",
+        "name2": "the dakota apartments",
+        "neigh1": [
+            "oak hill apartments"
+        ],
+        "neigh2": [],
+        "dist1": [
+            271
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "bellevue tobacco",
+        "name2": "bellevue chiropractic",
+        "neigh1": [
+            "tobacco bellevue"
+        ],
+        "neigh2": [
+            "bellevue chiropractic center"
+        ],
+        "dist1": [
+            192
+        ],
+        "dist2": [
+            7
+        ]
+    },
+    {
+        "name1": "shadyside place",
+        "name2": "alder place",
+        "neigh1": [
+            "shadyside smiles"
+        ],
+        "neigh2": [],
+        "dist1": [
+            661
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "foster plaza 6",
+        "name2": "foster plaza building 3",
+        "neigh1": [
+            "foster plaza",
+            "foster plaza 9",
+            "foster plaza 2",
+            "foster plaza 5",
+            "foster plaza 3",
+            "foster plaza 7",
+            "foster plaza 4",
+            "foster plaza 8",
+            "foster plaza 1",
+            "foster plaza 10"
+        ],
+        "neigh2": [
+            "foster plaza",
+            "foster plaza 3"
+        ],
+        "dist1": [
+            294,
+            257,
+            479,
+            217,
+            365,
+            93,
+            446,
+            137,
+            594,
+            231
+        ],
+        "dist2": [
+            229,
+            306
+        ]
+    },
+    {
+        "name1": "north side",
+        "name2": "salvation army north side",
+        "neigh1": [
+            "north side",
+            "north side",
+            "north side station"
+        ],
+        "neigh2": [],
+        "dist1": [
+            4,
+            33,
+            121
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "pittsburgh gifted center",
+        "name2": "pittsburgh tech security conference",
+        "neigh1": [
+            "pittsburgh gifted center library"
+        ],
+        "neigh2": [],
+        "dist1": [
+            35
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "darragh street apartments",
+        "name2": "darragh street luxury appartments",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "pittsburgh city theatre",
+        "name2": "pittsburgh quad",
+        "neigh1": [
+            "pittsburgh city courthouse",
+            "city theatre company"
+        ],
+        "neigh2": [
+            "pittsburgh clo"
+        ],
+        "dist1": [
+            875,
+            541
+        ],
+        "dist2": [
+            597
+        ]
+    },
+    {
+        "name1": "brentwood park",
+        "name2": "brentwood park",
+        "neigh1": [
+            "brentwood library",
+            "brentwood pool",
+            "brentwood bank",
+            "brentwood library",
+            "brentwood library"
+        ],
+        "neigh2": [
+            "brentwood library",
+            "brentwood pool",
+            "brentwood bank",
+            "brentwood library",
+            "brentwood library"
+        ],
+        "dist1": [
+            256,
+            140,
+            348,
+            247,
+            254
+        ],
+        "dist2": [
+            301,
+            200,
+            359,
+            293,
+            297
+        ]
+    },
+    {
+        "name1": "foster plaza 7",
+        "name2": "foster plaza building 10",
+        "neigh1": [
+            "foster plaza",
+            "foster plaza 9",
+            "foster plaza 2",
+            "foster plaza 5",
+            "foster plaza 3",
+            "foster plaza 4",
+            "foster plaza 8",
+            "foster plaza 1",
+            "foster plaza 6",
+            "foster plaza 10"
+        ],
+        "neigh2": [
+            "foster plaza",
+            "foster plaza 10"
+        ],
+        "dist1": [
+            386,
+            264,
+            572,
+            304,
+            458,
+            539,
+            134,
+            686,
+            93,
+            323
+        ],
+        "dist2": [
+            140,
+            26
+        ]
+    },
+    {
+        "name1": "one gateway center",
+        "name2": "three gateway center",
+        "neigh1": [
+            "three gateway center",
+            "four gateway center",
+            "two gateway center",
+            "one oxford center",
+            "gateway center park",
+            "gateway center cafeteria"
+        ],
+        "neigh2": [
+            "three gateway center",
+            "four gateway center",
+            "two gateway center",
+            "gateway center park",
+            "gateway center cafeteria"
+        ],
+        "dist1": [
+            108,
+            222,
+            92,
+            781,
+            246,
+            98
+        ],
+        "dist2": [
+            57,
+            101,
+            60,
+            113,
+            100
+        ]
+    },
+    {
+        "name1": "dollar bank",
+        "name2": "dollar bank",
+        "neigh1": [],
+        "neigh2": [
+            "dollar bank",
+            "dollar bank"
+        ],
+        "dist1": [],
+        "dist2": [
+            39,
+            309
+        ]
+    },
+    {
+        "name1": "mount lebanon high school",
+        "name2": "tennis courts @ mt. lebanon high school",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "allegheny antiques",
+        "name2": "allegheny center mall",
+        "neigh1": [],
+        "neigh2": [
+            "allegheny center alliance church",
+            "2 allegheny center",
+            "allegheny center alliance church"
+        ],
+        "dist1": [],
+        "dist2": [
+            316,
+            206,
+            363
+        ]
+    },
+    {
+        "name1": "metaltech",
+        "name2": "metal tech",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "east liberty park",
+        "name2": "east liberty ymca",
+        "neigh1": [
+            "east liberty station",
+            "east liberty garage",
+            "east liberty station"
+        ],
+        "neigh2": [
+            "east liberty station",
+            "east liberty station"
+        ],
+        "dist1": [
+            527,
+            804,
+            527
+        ],
+        "dist2": [
+            357,
+            357
+        ]
+    },
+    {
+        "name1": "sprit house",
+        "name2": "sprint store",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "pizza fiesta",
+        "name2": "pizza milano",
+        "neigh1": [
+            "pizza fiesta"
+        ],
+        "neigh2": [
+            "pizza milano"
+        ],
+        "dist1": [
+            109
+        ],
+        "dist2": [
+            13
+        ]
+    },
+    {
+        "name1": "pittsburgh news",
+        "name2": "pittsburgh luxury cruises",
+        "neigh1": [
+            "pittsburgh pirates",
+            "pittsburgh movers",
+            "pittsburgh poke",
+            "pittsburgh clo",
+            "pittsburgh skyline",
+            "pittsburgh beerfest",
+            "pittsburgh rare"
+        ],
+        "neigh2": [
+            "pittsburgh luxury cruises"
+        ],
+        "dist1": [
+            595,
+            459,
+            228,
+            278,
+            888,
+            684,
+            990
+        ],
+        "dist2": [
+            92
+        ]
+    },
+    {
+        "name1": "welch house",
+        "name2": "mcgill house",
+        "neigh1": [
+            "tech house"
+        ],
+        "neigh2": [
+            "mcgill house"
+        ],
+        "dist1": [
+            143
+        ],
+        "dist2": [
+            13
+        ]
+    },
+    {
+        "name1": "west building",
+        "name2": "seagate building",
+        "neigh1": [
+            "conestoga building",
+            "lawyers building",
+            "east building"
+        ],
+        "neigh2": [
+            "ewart building",
+            "at&t building"
+        ],
+        "dist1": [
+            945,
+            960,
+            86
+        ],
+        "dist2": [
+            685,
+            727
+        ]
+    },
+    {
+        "name1": "costco gas",
+        "name2": "costco gas",
+        "neigh1": [
+            "costco"
+        ],
+        "neigh2": [
+            "costco"
+        ],
+        "dist1": [
+            219
+        ],
+        "dist2": [
+            215
+        ]
+    },
+    {
+        "name1": "resnik house",
+        "name2": "dads house",
+        "neigh1": [],
+        "neigh2": [
+            "kanda house"
+        ],
+        "dist1": [],
+        "dist2": [
+            906
+        ]
+    },
+    {
+        "name1": "filmet park",
+        "name2": "filmet park",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "allegheny general hospital center for children",
+        "name2": "agh center for children",
+        "neigh1": [
+            "allegheny general hospital lab",
+            "allegheny general hospital",
+            "allegheny general hospital"
+        ],
+        "neigh2": [],
+        "dist1": [
+            755,
+            343,
+            396
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "kristas cantina",
+        "name2": "cantina",
+        "neigh1": [
+            "krista's cantina"
+        ],
+        "neigh2": [
+            "krista's cantina"
+        ],
+        "dist1": [
+            39
+        ],
+        "dist2": [
+            41
+        ]
+    },
+    {
+        "name1": "lincoln elementary school library",
+        "name2": "lincoln elementary school",
+        "neigh1": [
+            "lincoln elementary school"
+        ],
+        "neigh2": [
+            "lincoln elementary school"
+        ],
+        "dist1": [
+            42
+        ],
+        "dist2": [
+            87
+        ]
+    },
+    {
+        "name1": "william pitt union",
+        "name2": "william pitt union 9th floor lounge",
+        "neigh1": [
+            "william pitt union lawn"
+        ],
+        "neigh2": [
+            "william pitt union lawn"
+        ],
+        "dist1": [
+            78
+        ],
+        "dist2": [
+            84
+        ]
+    },
+    {
+        "name1": "donner house",
+        "name2": "welch house",
+        "neigh1": [],
+        "neigh2": [
+            "welch house",
+            "tech house"
+        ],
+        "dist1": [],
+        "dist2": [
+            50,
+            162
+        ]
+    },
+    {
+        "name1": "brioche dore",
+        "name2": "brioche dore",
+        "neigh1": [
+            "brioche doree"
+        ],
+        "neigh2": [
+            "brioche doree"
+        ],
+        "dist1": [
+            42
+        ],
+        "dist2": [
+            50
+        ]
+    },
+    {
+        "name1": "killarney",
+        "name2": "killarney underpass",
+        "neigh1": [
+            "killarney",
+            "killarney",
+            "killarney"
+        ],
+        "neigh2": [
+            "killarney",
+            "killarney",
+            "killarney"
+        ],
+        "dist1": [
+            31,
+            5,
+            7
+        ],
+        "dist2": [
+            33,
+            61,
+            58
+        ]
+    },
+    {
+        "name1": "panera bread",
+        "name2": "panera bread",
+        "neigh1": [
+            "panera bread",
+            "panera bread",
+            "panera bread"
+        ],
+        "neigh2": [
+            "panera bread",
+            "panera bread",
+            "panera bread"
+        ],
+        "dist1": [
+            684,
+            640,
+            36
+        ],
+        "dist2": [
+            38,
+            13,
+            616
+        ]
+    },
+    {
+        "name1": "east ohio st at cedar ave",
+        "name2": "bus stop for cedar ave and east ohio st",
+        "neigh1": [
+            "east ohio st at cedar ave",
+            "east ohio st at heinz st",
+            "east ohio st opp union ave",
+            "east ohio st at chestnut st"
+        ],
+        "neigh2": [
+            "east ohio st at cedar ave"
+        ],
+        "dist1": [
+            59,
+            746,
+            143,
+            533
+        ],
+        "dist2": [
+            46
+        ]
+    },
+    {
+        "name1": "kennywood park",
+        "name2": "kennywood maint. shop",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "schenley place",
+        "name2": "schenley park bridge",
+        "neigh1": [
+            "schenley plaza",
+            "schenley plaza"
+        ],
+        "neigh2": [
+            "schenley park cafe"
+        ],
+        "dist1": [
+            433,
+            388
+        ],
+        "dist2": [
+            412
+        ]
+    },
+    {
+        "name1": "essex house",
+        "name2": "team house",
+        "neigh1": [
+            "essex pool house"
+        ],
+        "neigh2": [
+            "rea house"
+        ],
+        "dist1": [
+            41
+        ],
+        "dist2": [
+            615
+        ]
+    },
+    {
+        "name1": "the pittsburgh fan",
+        "name2": "gateway to pittsburgh",
+        "neigh1": [
+            "the pittsburgh fan"
+        ],
+        "neigh2": [
+            "segway pittsburgh",
+            "city of pittsburgh"
+        ],
+        "dist1": [
+            3
+        ],
+        "dist2": [
+            385,
+            978
+        ]
+    },
+    {
+        "name1": "aiello's pizza",
+        "name2": "conicella's pizza",
+        "neigh1": [
+            "aiello's pizza"
+        ],
+        "neigh2": [
+            "conicella pizza"
+        ],
+        "dist1": [
+            20
+        ],
+        "dist2": [
+            25
+        ]
+    },
+    {
+        "name1": "chubby's pizza",
+        "name2": "wise guys pizza",
+        "neigh1": [],
+        "neigh2": [
+            "wiseguys pizza"
+        ],
+        "dist1": [],
+        "dist2": [
+            17
+        ]
+    },
+    {
+        "name1": "mcgill house",
+        "name2": "schenley house",
+        "neigh1": [],
+        "neigh2": [
+            "schenley house"
+        ],
+        "dist1": [],
+        "dist2": [
+            35
+        ]
+    },
+    {
+        "name1": "saint michaels church",
+        "name2": "saint anselm church",
+        "neigh1": [
+            "saint brendans church"
+        ],
+        "neigh2": [],
+        "dist1": [
+            607
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "ingram",
+        "name2": "ingram terrace",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "brentwood library",
+        "name2": "brentwood field",
+        "neigh1": [
+            "brentwood bank",
+            "brentwood library",
+            "brentwood park",
+            "brentwood library"
+        ],
+        "neigh2": [
+            "brentwood pool"
+        ],
+        "dist1": [
+            214,
+            13,
+            256,
+            6
+        ],
+        "dist2": [
+            216
+        ]
+    },
+    {
+        "name1": "excuses bar and grill",
+        "name2": "excuses bar & grill",
+        "neigh1": [
+            "excuses bar & grill"
+        ],
+        "neigh2": [
+            "ivp bar & grill",
+            "excuses bar & grill"
+        ],
+        "dist1": [
+            23
+        ],
+        "dist2": [
+            448,
+            176
+        ]
+    },
+    {
+        "name1": "allegheny antiques",
+        "name2": "1 allegheny center",
+        "neigh1": [],
+        "neigh2": [
+            "1 allegheny square",
+            "2 allegheny center"
+        ],
+        "dist1": [],
+        "dist2": [
+            54,
+            207
+        ]
+    },
+    {
+        "name1": "1914 murray apartments",
+        "name2": "1914 murray ave",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "oakland post office",
+        "name2": "oakland cafe",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "university center",
+        "name2": "university center turnaround",
+        "neigh1": [
+            "lutheran university center",
+            "hillel jewish university center",
+            "university technology development center"
+        ],
+        "neigh2": [
+            "lutheran university center"
+        ],
+        "dist1": [
+            643,
+            519,
+            708
+        ],
+        "dist2": [
+            638
+        ]
+    },
+    {
+        "name1": "pittsburgh gifted center",
+        "name2": "hampton inn pittsburgh univercity center",
+        "neigh1": [
+            "pittsburgh gifted center library"
+        ],
+        "neigh2": [
+            "hilton garden inn pittsburgh university place",
+            "hampton inn pittsburgh university/medical center",
+            "hampton inn pittsburgh university/medical center",
+            "hilton garden inn pittsburgh university place"
+        ],
+        "dist1": [
+            35
+        ],
+        "dist2": [
+            451,
+            12,
+            49,
+            494
+        ]
+    },
+    {
+        "name1": "elixir hair artistry & design",
+        "name2": "elixir hair artistry & design",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "first national trust company",
+        "name2": "first national bank",
+        "neigh1": [],
+        "neigh2": [
+            "first national bank wealth management",
+            "first national bank"
+        ],
+        "dist1": [],
+        "dist2": [
+            95,
+            13
+        ]
+    },
+    {
+        "name1": "shady oak apartments",
+        "name2": "shirley apartments",
+        "neigh1": [
+            "shady oak park"
+        ],
+        "neigh2": [
+            "neville apartments"
+        ],
+        "dist1": [
+            8
+        ],
+        "dist2": [
+            367
+        ]
+    },
+    {
+        "name1": "wood street",
+        "name2": "shiloh street",
+        "neigh1": [
+            "wood street",
+            "wood street galleries",
+            "wood street commons",
+            "wood street",
+            "wood street",
+            "wood street subway station",
+            "wood street galleries"
+        ],
+        "neigh2": [],
+        "dist1": [
+            58,
+            57,
+            341,
+            1,
+            23,
+            52,
+            48
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "woodlawn apartments",
+        "name2": "woodlawn apartments",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "shadyside plaza",
+        "name2": "shadyside village shopping plaza",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "bouquet gardens building f",
+        "name2": "bouquet gardens - building c",
+        "neigh1": [
+            "bouquet gardens building d",
+            "bouquet gardens building c",
+            "bouquet gardens building e",
+            "bouquet gardens building a",
+            "bouquet gardens building b",
+            "bouquet gardens building j",
+            "bouquet gardens building h",
+            "bouquet gardens building g"
+        ],
+        "neigh2": [
+            "bouquet gardens building d",
+            "bouquet gardens building c",
+            "bouquet gardens building e",
+            "bouquet gardens building a",
+            "bouquet gardens building b",
+            "bouquet gardens building j",
+            "bouquet gardens building h",
+            "bouquet gardens building g"
+        ],
+        "dist1": [
+            107,
+            69,
+            41,
+            92,
+            60,
+            164,
+            39,
+            55
+        ],
+        "dist2": [
+            38,
+            30,
+            109,
+            76,
+            114,
+            106,
+            80,
+            126
+        ]
+    },
+    {
+        "name1": "southside works city apartments",
+        "name2": "southside works cinema",
+        "neigh1": [
+            "southside works",
+            "southside works"
+        ],
+        "neigh2": [
+            "southside works cinema",
+            "southside works",
+            "southside works",
+            "southside works cinema"
+        ],
+        "dist1": [
+            281,
+            176
+        ],
+        "dist2": [
+            56,
+            70,
+            150,
+            72
+        ]
+    },
+    {
+        "name1": "berry hall, chatham university",
+        "name2": "chatham university berry hall",
+        "neigh1": [
+            "chatham university",
+            "dilworth hall, chatham university",
+            "chatham university"
+        ],
+        "neigh2": [
+            "chatham university",
+            "chatham university"
+        ],
+        "dist1": [
+            264,
+            189,
+            4
+        ],
+        "dist2": [
+            243,
+            503
+        ]
+    },
+    {
+        "name1": "mazza's shoes",
+        "name2": "mazzo's shoe repair",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "sloppy joe's",
+        "name2": "sloppy joe's cafe",
+        "neigh1": [
+            "sloppy joe's"
+        ],
+        "neigh2": [
+            "sloppy joe's"
+        ],
+        "dist1": [
+            2
+        ],
+        "dist2": [
+            18
+        ]
+    },
+    {
+        "name1": "dick's sporting goods",
+        "name2": "dick's sporting goods",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "anderson dining hall",
+        "name2": "anderson dining hall",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "pittsburgh union station",
+        "name2": "pittsburgh board of education",
+        "neigh1": [
+            "pittsburgh union station",
+            "union station",
+            "pittsburgh union station",
+            "pittsburgh union station"
+        ],
+        "neigh2": [],
+        "dist1": [
+            129,
+            240,
+            114,
+            129
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "carnegie park",
+        "name2": "carnegie park",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "commonwealth building",
+        "name2": "seagate building",
+        "neigh1": [],
+        "neigh2": [
+            "ewart building",
+            "at&t building"
+        ],
+        "dist1": [],
+        "dist2": [
+            685,
+            727
+        ]
+    },
+    {
+        "name1": "rite aid",
+        "name2": "rite aid",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "starbucks",
+        "name2": "starbucks",
+        "neigh1": [
+            "starbucks coffee",
+            "starbucks",
+            "starbucks",
+            "starbucks",
+            "starbucks"
+        ],
+        "neigh2": [
+            "starbucks",
+            "starbucks"
+        ],
+        "dist1": [
+            660,
+            981,
+            58,
+            654,
+            938
+        ],
+        "dist2": [
+            713,
+            695
+        ]
+    },
+    {
+        "name1": "foster plaza",
+        "name2": "foster plaza building 10",
+        "neigh1": [
+            "foster plaza 9",
+            "foster plaza 2",
+            "foster plaza 5",
+            "foster plaza 3",
+            "foster plaza 7",
+            "foster plaza 4",
+            "foster plaza 8",
+            "foster plaza 1",
+            "foster plaza 6",
+            "foster plaza 10"
+        ],
+        "neigh2": [
+            "foster plaza 10"
+        ],
+        "dist1": [
+            370,
+            204,
+            99,
+            82,
+            386,
+            165,
+            346,
+            351,
+            294,
+            117
+        ],
+        "dist2": [
+            26
+        ]
+    },
+    {
+        "name1": "allegheny traditional academy",
+        "name2": "allegheny refrigeration",
+        "neigh1": [
+            "columbus traditional academy"
+        ],
+        "neigh2": [
+            "allegheny refrigeration",
+            "allegheny",
+            "allegheny",
+            "allegheny"
+        ],
+        "dist1": [
+            862
+        ],
+        "dist2": [
+            21,
+            856,
+            856,
+            881
+        ]
+    },
+    {
+        "name1": "berry hall, chatham university",
+        "name2": "carriage house - chatham university",
+        "neigh1": [
+            "chatham university",
+            "dilworth hall, chatham university",
+            "chatham university"
+        ],
+        "neigh2": [
+            "carriage house, chatham university"
+        ],
+        "dist1": [
+            264,
+            189,
+            4
+        ],
+        "dist2": [
+            19
+        ]
+    },
+    {
+        "name1": "neville apartments",
+        "name2": "oakwood apartments",
+        "neigh1": [
+            "marybelle apartments",
+            "fifth neville apartments"
+        ],
+        "neigh2": [
+            "oakwood apartments"
+        ],
+        "dist1": [
+            117,
+            54
+        ],
+        "dist2": [
+            3
+        ]
+    },
+    {
+        "name1": "king's family restaurant",
+        "name2": "kings family restaurants",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "bluebird kitchen",
+        "name2": "bluebird kitchen",
+        "neigh1": [
+            "bluebird kitchen",
+            "bluebird kitchen"
+        ],
+        "neigh2": [
+            "bluebird kitchen",
+            "bluebird kitchen"
+        ],
+        "dist1": [
+            131,
+            269
+        ],
+        "dist2": [
+            372,
+            16
+        ]
+    },
+    {
+        "name1": "heinz hall",
+        "name2": "academic hall",
+        "neigh1": [],
+        "neigh2": [],
+        "dist1": [],
+        "dist2": []
+    },
+    {
+        "name1": "foli's",
+        "name2": "foley's",
+        "neigh1": [
+            "foli's place"
+        ],
+        "neigh2": [],
+        "dist1": [
+            32
+        ],
+        "dist2": []
+    },
+    {
+        "name1": "pennant",
+        "name2": "pennant t stop",
+        "neigh1": [
+            "pennant"
+        ],
+        "neigh2": [],
+        "dist1": [
+            68
+        ],
+        "dist2": []
+    }
+]

@@ -1,5 +1,5 @@
 import config
-from transformers import BertModel
+from transformers import BertModel, BertTokenizer
 import torch
 from torch import nn, optim
 import torch.nn.functional as F
@@ -12,6 +12,8 @@ class GeoER(nn.Module):
       hidden_size = config.lm_hidden
 
       self.language_model = BertModel.from_pretrained('bert-base-uncased')
+      self.neighbert = BertModel.from_pretrained('bert-base-uncased')
+      self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
       self.device = device
       self.finetuning = finetuning
@@ -41,6 +43,7 @@ class GeoER(nn.Module):
     x = x.to(self.device)
     att_mask = att_mask.to(self.device)
     x_coord = x_coord.to(self.device)
+    self.neighbert.eval()
 
     if len(x.shape) < 2:
       x = x.unsqueeze(0)
@@ -69,12 +72,38 @@ class GeoER(nn.Module):
     
     x_neighbors = []
     for b in range(b_s):
-      x_node1 = x_n[b][0][0].to(self.device)
-      x_neighborhood1 = x_n[b][0][1].to(self.device)
-      x_distances1 = x_n[b][0][2].view(-1,1).to(self.device)
-      x_node2 = x_n[b][1][0].to(self.device)
-      x_neighborhood2 = x_n[b][1][1].to(self.device)
-      x_distances2 = x_n[b][1][2].view(-1,1).to(self.device)
+    
+      x_neighborhood1 = []
+      x_neighborhood2 = []
+      with torch.no_grad():
+        x_node1 = torch.mean(self.neighbert(torch.tensor(self.tokenizer(x_n[b]['name1'])['input_ids']).to(self.device).unsqueeze(0))[0][:, :, :], 1).squeeze()
+        x_node2 = torch.mean(self.neighbert(torch.tensor(self.tokenizer(x_n[b]['name2'])['input_ids']).to(self.device).unsqueeze(0))[0][:, :, :], 1).squeeze()
+      
+        for x_n1 in x_n[b]['neigh1']:
+          x_neighborhood1.append(torch.mean(self.neighbert(torch.tensor(self.tokenizer(x_n1)['input_ids']).to(self.device).unsqueeze(0))[0][:, :, :], 1).squeeze())
+        
+        if not len(x_neighborhood1):
+          x_neighborhood1.append(torch.zeros(768))
+          
+        for x_n2 in x_n[b]['neigh2']:
+          x_neighborhood2.append(torch.mean(self.neighbert(torch.tensor(self.tokenizer(x_n2)['input_ids']).to(self.device).unsqueeze(0))[0][:, :, :], 1).squeeze())
+        
+        if not len(x_neighborhood2):
+          x_neighborhood2.append(torch.zeros(768))
+          
+        x_neighborhood1 = torch.stack(x_neighborhood1).to(self.device)
+        x_neighborhood2 = torch.stack(x_neighborhood2).to(self.device)
+        
+        x_distances1 = x_n[b]['dist1']
+        if not len(x_distances1):
+          x_distances1.append(1000)
+          
+        x_distances2 = x_n[b]['dist2']
+        if not len(x_distances2):
+          x_distances2.append(1000)
+          
+        x_distances1 = torch.tensor(x_distances1, dtype=torch.float).view(-1, 1).to(self.device)
+        x_distances2 = torch.tensor(x_distances2, dtype=torch.float).view(-1, 1).to(self.device)
 
       x_concat1 = torch.cat([self.w_attn(x_node1).view(1,-1).repeat(x_neighborhood1.shape[0], 1), self.w_attn(x_neighborhood1)], 1)
       x_concat2 = torch.cat([self.w_attn(x_node2).view(1,-1).repeat(x_neighborhood2.shape[0], 1), self.w_attn(x_neighborhood2)], 1)

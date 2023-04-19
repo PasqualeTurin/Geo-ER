@@ -136,7 +136,6 @@ def prepare_dataset(path, n_path, max_seq_len=128):
 
   with open(n_path, encoding='utf-8') as f:
     neigh = json.load(f)
-    
 
   return data_x, coord_x, neigh, data_y
 
