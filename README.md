@@ -10,8 +10,8 @@ Now Geo-ER supports json formatted neighbors for entities, to make it easier to 
 # list of python dictionaries
 [
     {
-        "name1": "some name",         # name of entity1
-        "name2": "some other name",   # name of entity2
+        "name1": "...",               # name of entity1
+        "name2": "...",               # name of entity2
         "neigh1": [
                                       # list of entity1 neighbors' names
         ],
@@ -25,6 +25,7 @@ Now Geo-ER supports json formatted neighbors for entities, to make it easier to 
                                       # list of entity2 neighbors' distances from entity2
         ]
     }
+]
 ```
 
 ### Requirements
